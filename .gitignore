@@ -56,3 +56,6 @@ checkpoints/
 wandb/
 runs/
 mlruns/
+
+# Env template stays local-only
+.env.example
