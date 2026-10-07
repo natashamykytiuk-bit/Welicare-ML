@@ -1,0 +1,7 @@
+anthropic
+python-dotenv
+torch
+transformers
+datasets
+scikit-learn
+pandas

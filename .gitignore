@@ -1,0 +1,58 @@
+# --- Mirrors Welicare conventions ---
+
+# Local environment & secrets (API keys, service accounts — NEVER commit)
+.env
+.env*.local
+/secrets/
+*service-account*.json
+*.pem
+*.key
+
+# Logs & debug
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Agent & AI-assistant files (local-only, same as Welicare)
+.claude/
+CLAUDE.md
+AGENTS.md
+.agents/
+Claude outputs/
+
+# Local-only research output
+/scripts/output/
+
+# --- Python / ML equivalents of node_modules, build output ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Data: generated/raw data stays local; small curated samples are committed explicitly
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+!data/sample/
+
+# Model weights & experiment tracking (host weights on HF Hub / GitHub Releases)
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+wandb/
+runs/
+mlruns/
